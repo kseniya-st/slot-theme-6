@@ -1,0 +1,59 @@
+@use "../settings" as *;
+
+.content-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    & > *:only-child {
+        grid-column: 1 / -1;
+    }
+    .btn {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__content {
+        grid-column: span 1;
+    }
+
+    img {
+        width: 100%;
+        grid-column: span 1;
+
+        margin: 0;
+    }
+
+    &--reversed {
+        .content-img__content {
+            order: 1;
+        }
+        img {
+            order: -1;
+        }
+    }
+
+    @include media-max-md {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+
+        & > img {
+            width: 100%;
+            order: -1;
+        }
+        .btn {
+            width: 100%;
+
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+    }
+}

@@ -26,6 +26,14 @@ html(lang="en")
                     each item in bonusCards
                         +bonusCard(item)
 
+            include /components/fragments/content-img.pug
+
+            section.wrapper 
+                h2 Table
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                include /components/fragments/table.pug
+                +table(table, true)
+
 
             include ../components/blocks/section-faq.pug 
 

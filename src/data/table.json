@@ -1,84 +1,47 @@
 {
-    "tablev1": {
+    "table": {
         "thead": [
             [
-                { "text": "#" },
-                { "text": "Teams", "className": "align-left" },
-                { "text": "Best Odds" },
-                { "text": "Probability" },
-                { "text": "P" },
-                { "text": "W" },
-                { "text": "L" },
-                { "text": "PTS" },
-                { "text": "NR" }
+                { "text": "Software" },
+                { "text": "Release"},
+                { "text": "RTP" },
+                { "text": "Max Win" },
+                { "text": "Number of Reels" },
+                { "text": "Betways" }
             ]
         ],
         "tbody": [
             [
-                { "text": "1" },
-                { "text": "Gujarat Titans", "className": "align-left text-label" },
-                { "text": "<span class='table__odds'>6.50</span>" },
-                { "text": "15.38%" },
-                { "text": "14" },
-                { "text": "10" },
-                { "text": "4" },
-                { "text": "20" },
-                { "text": "0.809" }
-            ],
-            [
-                { "text": "2" },
-                { "text": "Chennai Super Kings", "className": "align-left text-label" },
-                { "text": "<span class='table__odds'>6.50</span>" },
-                { "text": "16.67%" },
-                { "text": "15" },
-                { "text": "9" },
-                { "text": "3" },
-                { "text": "21" },
-                { "text": "0.867" }
-            ],
-            [
-                { "text": "3" },
-                { "text": "Lucknow Super Giants", "className": "align-left text-label" },
-                { "text": "<span class='table__odds'>6.50</span>" },
-                { "text": "11.76%" },
-                { "text": "11" },
-                { "text": "11" },
-                { "text": "4" },
-                { "text": "14" },
-                { "text": "0.801" }
-            ],
-            [
-                { "text": "4" },
-                { "text": "Mumbai Indians", "className": "align-left text-label" },
-                { "text": "<span class='table__odds'>6.50</span>" },
-                { "text": "16.67%" },
-                { "text": "9" },
-                { "text": "13" },
-                { "text": "2" },
-                { "text": "15" },
-                { "text": "0.789" }
-            ],
-            [
+                { "text": "Pragmatic Play" },
+                { "text": "30.06.2022" },
+                { "text": "96,5%" },
+                { "text": "x5000" },
                 { "text": "5" },
-                { "text": "Rajasthan Royals", "className": "align-left text-label" },
-                { "text": "<span class='table__odds'>6.50</span>" },
-                { "text": "10.00%" },
-                { "text": "12" },
-                { "text": "15" },
-                { "text": "4" },
-                { "text": "16" },
-                { "text": "0.764" }
+                { "text": "20" }
             ],
             [
-                { "text": "6" },
-                { "text": "Royal Challengers Bengaluru", "className": "align-left text-label" },
-                { "text": "<span class='table__odds'>6.50</span>" },
-                { "text": "11.76%" },
-                { "text": "13" },
-                { "text": "12" },
-                { "text": "3" },
-                { "text": "11" },
-                { "text": "0.643" }
+                { "text": "Pragmatic Play" },
+                { "text": "30.06.2022" },
+                { "text": "96,5%" },
+                { "text": "x5000" },
+                { "text": "5" },
+                { "text": "20" }
+            ],
+            [
+                { "text": "Pragmatic Play" },
+                { "text": "30.06.2022" },
+                { "text": "96,5%" },
+                { "text": "x5000" },
+                { "text": "5" },
+                { "text": "20" }
+            ],
+            [
+                { "text": "Pragmatic Play" },
+                { "text": "30.06.2022" },
+                { "text": "96,5%" },
+                { "text": "x5000" },
+                { "text": "5" },
+                { "text": "20" }
             ]
         ]
     },
