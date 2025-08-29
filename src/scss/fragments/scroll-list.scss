@@ -1,0 +1,14 @@
+@use "../settings" as *;
+
+.scroll-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    @include flex(row, stretch, flex-start, 16px);
+    @include hideScrollbar;
+
+    // &--6 {
+    //     & > * {
+    //         min-width: calc((var(--width-container, 1380px) - 16px * 5) / 6);
+    //     }
+    // }
+}

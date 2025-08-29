@@ -1,0 +1,63 @@
+@use "../settings" as *;
+
+.slot-card {
+    @include flex(column, stretch, flex-start);
+    min-width: 157px;
+    width: 157px;
+
+    &__wrap {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        flex: 1;
+
+        &:hover {
+            .slot-card__btns {
+                transform: translateX(0);
+            }
+        }
+
+        img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__btns {
+        position: relative;
+        height: 100%;
+        min-height: 148px;
+        padding: 13px;
+        @include flex(column, stretch, center, 4px);
+        transform: translateX(-100%);
+
+        @include transition(transform);
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            z-index: 1;
+            width: 100%;
+        }
+    }
+
+    &__name {
+        margin-top: 8px;
+        color: var(--text-main, #2b2b2b);
+        @include font-m-semibold;
+    }
+
+    &__provider {
+        margin-top: 2px;
+        color: var(--text-secondary, #6b6b6b);
+        @include font-s;
+    }
+}

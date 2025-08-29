@@ -1,0 +1,154 @@
+{
+    "slotCards": [
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        },
+        {
+            "img":"fruit-cocktail.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary btn--s",
+                    "text":"Play"
+                },
+                {
+                    "modificator":"btn--secondary btn--s",
+                    "text":"Play Demo"
+                }
+            ],
+            "name":"Fruit Cocktail",
+            "provider":"Igrosoft"
+        }
+    ]
+}

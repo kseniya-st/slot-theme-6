@@ -69,6 +69,18 @@ $font-size-default: 16;
     }
 }
 
+@mixin font-lg-fix() {
+    font-size: rem(18);
+    line-height: 150%;
+    font-weight: 400;
+}
+
+@mixin font-lg-medium-fix() {
+    font-size: rem(18);
+    line-height: 150%;
+    font-weight: 500;
+}
+
 @mixin font-m() {
     font-size: rem(16);
     line-height: 150%;
@@ -79,6 +91,12 @@ $font-size-default: 16;
     font-size: rem(16);
     line-height: 150%;
     font-weight: 500;
+}
+
+@mixin font-m-semibold() {
+    font-size: rem(16);
+    line-height: 150%;
+    font-weight: 600;
 }
 
 @mixin font-s() {

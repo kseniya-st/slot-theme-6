@@ -1,0 +1,14 @@
+//- @defaultData = slotCards[0]
+//- mixin
+include /layouts/base.pug
+block content
+    mixin slotCard(item)
+        li.slot-card
+            .slot-card__wrap 
+                img(src=`img/${item.img}` alt="")
+                .slot-card__btns
+                    each btn in item.btns 
+                        +button(btn.modificator, btn.text)
+            p.slot-card__name= item.name
+            p.slot-card__provider= item.provider
+

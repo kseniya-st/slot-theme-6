@@ -31,10 +31,6 @@
         opacity: 0.6;
     }
 
-    @include media-max-sm {
-        padding: 10px 16px;
-    }
-
     &--primary {
         background: var(--button-bg, #ff638f);
         color: var(--button-color, #fff);
@@ -51,5 +47,9 @@
         @include hoverActiveFocus {
             background: var(--secondary-button-hover-bg, #3b8ffe);
         }
+    }
+
+    &--s {
+        padding: 10px 16px;
     }
 }

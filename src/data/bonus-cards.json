@@ -1,0 +1,64 @@
+{
+    "bonusCards": [
+        {
+            "img": "1win.png",
+            "rate": 4.5,
+            "provider": "1win Casino",
+            "bonus": "Welcome Bonus 100% up to €500 + 200 FS",
+            "btn": {
+                "modificator": "btn--primary",
+                "text": "Get Bonus"
+            }
+        },
+        {
+            "img": "bet-winner.png",
+            "rate": 2.5,
+            "provider": "Betwinner Casino",
+            "bonus": "Welcome Bonus 100% up to €500 + 200 FS",
+            "btn": {
+                "modificator": "btn--primary",
+                "text": "Get Bonus"
+            }
+        },
+        {
+            "img": "1xbet.png",
+            "rate": 2.5,
+            "provider": "1xBet Casino",
+            "bonus": "Welcome Bonus 100% up to €500 + 200 FS",
+            "btn": {
+                "modificator": "btn--primary",
+                "text": "Get Bonus"
+            }
+        },
+        {
+            "img": "bet-winner.png",
+            "rate": 2.5,
+            "provider": "Betwinner Casino",
+            "bonus": "Welcome Bonus 100% up to €500 + 200 FS",
+            "btn": {
+                "modificator": "btn--primary",
+                "text": "Get Bonus"
+            }
+        },
+        {
+            "img": "1xbet.png",
+            "rate": 2.5,
+            "provider": "1xBet Casino",
+            "bonus": "Welcome Bonus 100% up to €500 + 200 FS",
+            "btn": {
+                "modificator": "btn--primary",
+                "text": "Get Bonus"
+            }
+        },
+        {
+            "img": "1win.png",
+            "rate": 4.5,
+            "provider": "1win Casino",
+            "bonus": "Welcome Bonus 100% up to €500 + 200 FS",
+            "btn": {
+                "modificator": "btn--primary",
+                "text": "Get Bonus"
+            }
+        }
+    ]
+}
