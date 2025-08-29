@@ -10,13 +10,16 @@
 }
 
 html {
-    font-size: var(--font-default);
+    font:
+        400 var(--font-default) / 1.5 var(--ff-poppins),
+        sans-serif;
+
     @include default-scrollbar;
 }
 
 body {
-    background: var(--surface-dim, #11140f);
-    color: var(--on-surface, #e1e4d9);
+    background: var(--site-bg, #f7f7f7);
+    color: var(--text-secondary, #6b6b6b);
     overflow-x: hidden;
 
     @include flex(column, stretch, flex-start);
@@ -42,14 +45,43 @@ svg {
 }
 
 :root {
+    --ff-poppins: "Poppins", sans-serif;
     --offsets: 20px;
-    --width-container: 1440px;
-    --wrapper-margin: 32px;
+    --width-container: 1380px;
+    --wrapper-margin: 16px;
 
-    --font-default: 18px;
+    --font-default: 16px;
 
     --star-color: #fbbf24;
     --star-bg: transparent;
+
+    --site-bg: #f7f7f7;
+    --card-bg: #ffffff;
+    --card-secondary-bg: #f9f9f9;
+    --button-color: #ffffff;
+    --button-hover-color: #ffffff;
+    --button-bg: #ff638f;
+    --button-hover-bg: #fd337d;
+    --secondary-button-color: #ffffff;
+    --secondary-button-hover-color: #ffffff;
+    --secondary-button-bg: #4ca8ff;
+    --secondary-button-hover-bg: #3b8ffe;
+    --link-color-hover: #3b8ffe;
+    --text-main: #2b2b2b;
+    --text-secondary: #6b6b6b;
+    --line-color: #e4ebed;
+    --accent-base: #3b8ffe;
+    --pros: #08d4ab;
+    --cons: #ff3676;
+    --hover-card: #cee7ff;
+    --line-secondary-color: #e9e9e9;
+    --accent-secondary: #eff8ff;
+
+    /* BORDER RADIUS */
+    --button-radius: 36px;
+    --button-radius-rem: 2.25rem;
+    --card-radius: 20px;
+    --card-radius-rem: 1.25rem;
 
     @include media-max-sm {
         --offsets: 16px;

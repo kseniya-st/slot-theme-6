@@ -1,73 +1,78 @@
 @use "settings" as *;
 
+h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
-    margin-bottom: var(--editor-content-margin, 16px);
+    color: var(--text-main, #2b2b2b);
+    margin-bottom: 16px;
+}
 
-    &:not(:first-child) {
-        margin-top: var(--editor-content-margin, 16px);
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 20px;
+
+    @include media-max-sm {
+        margin-top: 16px;
     }
 }
 
-a {
-    color: var(--on-surface-variant);
+p:not([class]),
+ul:not([class]),
+ol:not([class]) {
+    a:not([class]) {
+        color: var(--text-secondary, #6b6b6b);
+        text-decoration: underline;
+        @include transition(color);
+
+        @include hoverActiveFocus {
+            color: var(--link-color-hover, #3b8ffe);
+            text-decoration: none;
+        }
+    }
 }
 
 p:not([class]) {
+    margin-top: 16px;
+
     &:first-child {
         margin-top: 0;
-    }
-
-    margin-top: var(--editor-content-margin, 16px);
-}
-
-p,
-ul,
-ol {
-    &:not([class]) {
-        a:not([class]) {
-            color: var(--primary, #7ade50);
-            @include transition(color);
-            @include hoverActiveFocus {
-                color: #fff;
-            }
-        }
     }
 }
 
 h1 {
-    margin-bottom: 20px;
+    @include font-h1;
 }
 
 h2 {
-    margin-bottom: 32px;
-
-    @include media-max-sm {
-        margin-bottom: 28px;
-    }
+    @include font-h2;
 }
 
 h3 {
-    &:not([class]) {
-        margin-top: 24px;
-    }
+    @include font-h3;
+}
 
-    @include media-max-sm {
-        &:not([class]) {
-            margin-top: 20px;
-        }
-    }
+h4,
+h5,
+h6 {
+    @include font-h4;
 }
 
 ul:not([class]),
 ul.wp-block-list,
 ol:not([class]),
 ol.wp-block-list {
-    &:not(:first-child) {
-        margin-top: var(--editor-content-margin, 16px);
+    margin-top: 16px;
+    @include flex(column, flex-start, flex-start, 8px);
+
+    &:first-child {
+        margin-top: 0;
     }
+
     li {
         position: relative;
     }
@@ -79,24 +84,17 @@ ol.wp-block-list {
 
     li {
         counter-increment: ol-default;
-        padding-left: 27px;
+        padding-left: 26px;
 
         &::before {
             position: absolute;
             content: counter(ol-default) ". ";
-            width: 27px;
+            width: 18px;
             left: 0;
             text-align: center;
-        }
-    }
 
-    @include media-max-sm {
-        li {
-            padding-left: 16px;
-
-            &::before {
-                width: 16px;
-            }
+            @include font-text-s-bold;
+            color: var(--accent-base, #3b8ffe);
         }
     }
 }
@@ -104,28 +102,18 @@ ol.wp-block-list {
 ul:not([class]),
 ul.wp-block-list {
     li {
-        padding-left: 26px;
+        padding-left: 19px;
 
         &::before {
             content: "";
             position: absolute;
-            top: 10px;
-            left: 11px;
-            width: 5px;
-            height: 5px;
-            border-radius: 8px;
-            background: var(--on-surface, #e1e4d9);
-        }
-
-        @include media-max-sm {
-            padding-left: 20px;
-
-            &::before {
-                top: 9px;
-                left: 9px;
-                width: 3px;
-                height: 3px;
-            }
+            top: 50%;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            background: var(--accent-base, #3b8ffe);
+            transform: rotate(45deg) translateY(-50%);
         }
     }
 }
