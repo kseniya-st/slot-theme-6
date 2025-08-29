@@ -1,0 +1,8 @@
+//- @mixin
+mixin mobBtn(item)
+    aside.mob-btn
+        img(src=`img/${item.img}.png`, alt="") 
+        p.mob-btn__text= item.text
+            span= item.span 
+        include /components/fragments/button.pug
+        +button(item.btn.modificator, item.btn.text)
