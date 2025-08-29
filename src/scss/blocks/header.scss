@@ -107,7 +107,7 @@
                 @include flex(row, center);
 
                 color: var(--text-main, #2b2b2b);
-                @include font-text-m-medium;
+                @include font-m-medium;
                 @include transition(#{color});
             }
 

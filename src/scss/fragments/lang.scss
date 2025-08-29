@@ -7,7 +7,9 @@
     @include flex(row, center, flex-start, 8px);
 
     color: var(--text-main, #2b2b2b);
-    @include font-text-s;
+    @include font-s;
+
+    cursor: pointer;
 
     svg,
     img {
@@ -58,7 +60,7 @@
         @include flex(row, center, center, 8px);
         padding: 8px 12px;
 
-        @include font-text-m;
+        @include font-m;
         color: var(--text-main, #2b2b2b);
 
         @include transition(color);

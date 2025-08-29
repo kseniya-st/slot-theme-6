@@ -3,10 +3,13 @@
 .wrapper {
     position: relative;
     width: 100%;
-    max-width: calc(var(--width-container) + var(--offsets, 20px) * 2);
+    max-width: calc(var(--width-container));
 
     margin: var(--wrapper-margin) auto 0;
-    padding: 0 var(--offsets, 20px);
+    padding: 20px;
+
+    border-radius: var(--card-radius, 20px);
+    background: var(--card-bg, #fff);
 
     & > img {
         &:not(:first-child) {
@@ -23,9 +26,18 @@
         }
     }
 
+    @include mediaMax(1420px) {
+        margin-inline: var(--offsets, 20px);
+        max-width: calc(100% - var(--offsets, 20px) * 2);
+    }
+
     @include media-max-md {
         & > .btn {
             width: 100%;
         }
+    }
+
+    @include media-max-sm {
+        padding: 16px;
     }
 }

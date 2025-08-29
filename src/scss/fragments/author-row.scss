@@ -1,0 +1,63 @@
+@use "../settings" as *;
+
+.author-row {
+    @include flex(row, center, flex-start, 8px);
+    flex-wrap: wrap;
+    margin-top: 12px;
+
+    padding-top: 12px;
+    border-top: 1px solid var(--line-color, #e4ebed);
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    img {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        color: var(--text-main, #2b2b2b);
+        @include font-xl-medium;
+    }
+
+    &__position {
+        color: var(--text-secondary, #6b6b6b);
+        @include font-lg;
+    }
+
+    &__time {
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        color: var(--text-main, #2b2b2b);
+        @include font-s;
+
+        span {
+            color: var(--text-secondary, #6b6b6b);
+            display: inline-block;
+            margin-right: 4px;
+        }
+    }
+
+    @include media-max-sm {
+        padding-top: 0;
+        margin-top: 16px;
+        border-top: 0;
+
+        img {
+            width: 29px;
+            height: 29px;
+            min-width: 29px;
+        }
+
+        &__time {
+            width: 100%;
+            padding-top: 8px;
+            border-top: 1px solid var(--line-color, #e4ebed);
+        }
+    }
+}

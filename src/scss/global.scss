@@ -22,6 +22,8 @@ body {
     color: var(--text-secondary, #6b6b6b);
     overflow-x: hidden;
 
+    @include font-m;
+
     @include flex(column, stretch, flex-start);
     min-height: 100vh;
 }
@@ -52,7 +54,7 @@ svg {
 
     --font-default: 16px;
 
-    --star-color: #fbbf24;
+    --star-color: #fc0;
     --star-bg: transparent;
 
     --site-bg: #f7f7f7;

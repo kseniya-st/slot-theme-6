@@ -1,0 +1,84 @@
+@use "../settings" as *;
+
+.section-hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    color: var(--text-main, #2b2b2b);
+
+    h1 {
+        margin: 0;
+    }
+
+    &__rate {
+        color: var(--text-main, #2b2b2b);
+
+        @include rateStars(20px);
+        flex-direction: row-reverse;
+        font-size: rem(18);
+        line-height: 150%;
+        font-weight: 500;
+    }
+
+    &__demo {
+        position: relative;
+        min-height: 534px;
+        margin-top: 20px;
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 20px;
+
+        background-position: center;
+        background-size: cover;
+
+        @include flex(row, center, center);
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+    }
+
+    &__btns {
+        position: relative;
+        z-index: 2;
+        @include flex(column, stretch, center, 8px);
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    @include media-min-sm {
+        & > * {
+            grid-column: 1 / -1;
+        }
+
+        h1 {
+            grid-column: 1 / 2;
+        }
+
+        &__rate {
+            grid-column: 2 / 3;
+        }
+    }
+
+    @include media-max-sm {
+        grid-template-columns: 1fr;
+        &__demo {
+            min-height: 199px;
+            margin-top: 16px;
+        }
+
+        &__rate {
+            margin-right: auto;
+            margin-top: 8px;
+        }
+    }
+}

@@ -93,7 +93,7 @@ ol.wp-block-list {
             left: 0;
             text-align: center;
 
-            @include font-text-s-bold;
+            @include font-s-bold;
             color: var(--accent-base, #3b8ffe);
         }
     }
