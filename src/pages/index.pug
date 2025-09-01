@@ -3,10 +3,12 @@ html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width")
     title main page
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css")
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
     link(rel="stylesheet",  href=cssPath)
     body
         include ../components/blocks/header.pug
+        include /layouts/base.pug
 
         main
             include /components/blocks/section-hero.pug
@@ -14,7 +16,6 @@ html(lang="en")
             section.wrapper 
                 h2 Most Popular Free Slots
                 ul.scroll-list.js-scroll-list
-                    include /components/fragments/slot-card.pug
                     each item in slotCards
                         +slotCard(item)
             
@@ -22,7 +23,6 @@ html(lang="en")
                 h2 Bonuses
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 ul.grid-block 
-                    include /components/fragments/bonus-card.pug
                     each item in bonusCards
                         +bonusCard(item)
 
@@ -31,8 +31,34 @@ html(lang="en")
             section.wrapper 
                 h2 Table
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                include /components/fragments/table.pug
                 +table(table, true)
+
+            section.wrapper 
+                h2 Top 10 Casinos
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                +listing(listing)
+
+            section.wrapper 
+                h2 Screenshots
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                ul.scroll-list.js-scroll-list
+                    each item in slotCards
+                        +slotCard(item)
+
+            section.wrapper 
+                h2 Screenshots
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                +gallery(gallery)
+
+            section.wrapper 
+                h2 How to
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                +howTo(howTo)
+            
+            section.wrapper 
+                h2 Sugar Rush Slot Paytable & Symbols
+                p Sugar Rush online was designed and launched in 2019 by Pragmatic Play, a well-known software development company specializing in creating online casino games. It quickly became a popular game, with several sequels.
+                include /components/fragments/symbol-cards.pug
 
 
             include ../components/blocks/section-faq.pug 
@@ -42,5 +68,6 @@ html(lang="en")
         include ../components/fragments/mob-btn.pug
         +mobBtn(mobBtn)
 
+        script(src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js")
         script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
         script(src=jsPath, type=jsType ? 'module' : undefined)

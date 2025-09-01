@@ -6,6 +6,16 @@
     @include flex(row, stretch, flex-start, 16px);
     @include hideScrollbar;
 
+    margin-top: 20px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @include media-max-sm {
+        margin-top: 16px;
+    }
+
     // &--6 {
     //     & > * {
     //         min-width: calc((var(--width-container, 1380px) - 16px * 5) / 6);

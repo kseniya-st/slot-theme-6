@@ -1,0 +1,30 @@
+{
+    "howTo": [
+        {
+            "title":"Visit the 1win website", 
+            "descr": "Open your preferred web browser and enter the official 1win website URL.",
+            "img":"how-to.png"
+        },
+        {
+            "title":"Visit the 1win website", 
+            "descr": "Open your preferred web browser and enter the official 1win website URL.",
+            "img":"how-to.png"
+        },
+        {
+            "title":"Visit the 1win website", 
+            "descr": "Open your preferred web browser and enter the official 1win website URL.",
+            "img":"how-to.png"
+        },
+        {
+            "title":"Visit the 1win website", 
+            "descr": "Open your preferred web browser and enter the official 1win website URL.",
+            "img":"how-to.png",
+            "btns": [
+                {
+                    "modificator":"btn--primary",
+                    "text":"Login"
+                }
+            ]
+        }
+    ]
+}

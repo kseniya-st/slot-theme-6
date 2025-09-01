@@ -1,0 +1,144 @@
+{
+    "listing": [
+        {
+            "place": "1.",
+            "name":"1win Casino",
+            "img":"1win.png",
+            "rate": 4.8,
+            "advantages": [
+                "5,000+ games",
+                "Huge bonuses",
+                "No verification needed"
+            ],
+            "bonus": "100% up to €500 + 200 FS",
+            "btns": [
+                {
+                    "modificator":"btn--primary",
+                    "text":"Visit Casino"
+                }
+            ],
+            "payments": [
+                {
+                    "img":"cashtocode.png"
+                },
+                {
+                    "img":"bitcoin.png"
+                },
+                {
+                    "img":"discover.png"
+                },
+                {
+                    "img":"mastercard.png"
+                },
+                {
+                    "img":"mastercard.png"
+                }
+            ]
+        },
+         {
+            "place": "2.",
+            "name":"Pin-Up Casino",
+            "img":"pin-up.png",
+            "rate": 4.8,
+            "advantages": [
+                "5,000+ games",
+                "Huge bonuses",
+                "No verification needed"
+            ],
+            "bonus": "100% up to €500 + 200 FS",
+            "btns": [
+                {
+                    "modificator":"btn--primary",
+                    "text":"Visit Casino"
+                }
+            ],
+            "payments": [
+                {
+                    "img":"cashtocode.png"
+                },
+                {
+                    "img":"bitcoin.png"
+                },
+                {
+                    "img":"discover.png"
+                },
+                {
+                    "img":"mastercard.png"
+                },
+                {
+                    "img":"mastercard.png"
+                }
+            ]
+        },
+         {
+            "place": "3.",
+            "name":"1XBet Casino",
+            "img":"1xbet.png",
+            "rate": 4.8,
+            "advantages": [
+                "5,000+ games",
+                "Huge bonuses",
+                "No verification needed"
+            ],
+            "bonus": "100% up to €500 + 200 FS",
+            "btns": [
+                {
+                    "modificator":"btn--primary",
+                    "text":"Visit Casino"
+                }
+            ],
+            "payments": [
+                {
+                    "img":"cashtocode.png"
+                },
+                {
+                    "img":"bitcoin.png"
+                },
+                {
+                    "img":"discover.png"
+                },
+                {
+                    "img":"mastercard.png"
+                },
+                {
+                    "img":"mastercard.png"
+                }
+            ]
+        },
+         {
+            "place": "4.",
+            "name":"1win Casino",
+            "img":"1win.png",
+            "rate": 4.8,
+            "advantages": [
+                "5,000+ games",
+                "Huge bonuses",
+                "No verification needed"
+            ],
+            "bonus": "100% up to €500 + 200 FS",
+            "btns": [
+                {
+                    "modificator":"btn--primary",
+                    "text":"Visit Casino"
+                }
+            ],
+            "payments": [
+                {
+                    "img":"cashtocode.png"
+                },
+                {
+                    "img":"bitcoin.png"
+                },
+                {
+                    "img":"discover.png"
+                },
+                {
+                    "img":"mastercard.png"
+                },
+                {
+                    "img":"mastercard.png"
+                }
+            ]
+        }
+    ]
+}

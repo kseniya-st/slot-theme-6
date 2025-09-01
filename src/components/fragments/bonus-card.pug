@@ -1,12 +1,10 @@
 //- @defaultData = bonusCards[0]
-//- mixin
-include /layouts/base.pug
-block content
-    mixin bonusCard(item)
-        li.bonus-card
-            img(src=`img/${item.img}` alt="")
-            span.bonus-card__rate(style=`--rating: ${item.rate};`)= item.rate
-            p.bonus-card__provider= item.provider
-            p.bonus-card__bonus= item.bonus
-            if(item.btn)
-                +button(item.btn.modificator, item.btn.text)
+//- @mixin
+mixin bonusCard(item)
+    li.bonus-card
+        img(src=`img/${item.img}` alt="")
+        span.bonus-card__rate(style=`--rating: ${item.rate};`)= item.rate
+        p.bonus-card__provider= item.provider
+        p.bonus-card__bonus= item.bonus
+        if(item.btn)
+            +button(item.btn.modificator, item.btn.text)

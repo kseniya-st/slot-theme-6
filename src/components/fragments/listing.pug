@@ -1,0 +1,38 @@
+//- @defaultData = listing
+//- @mixin
+mixin listing(list, modificator)
+    table.listing(class=`${modificator ? modificator : ''}`)
+        tbody.listing__list 
+            each item in list 
+                tr.listing__row 
+                    td.listing__item
+                        p.listing__name
+                            span.listing__place= item.place
+                            | #{item.name}
+
+                        .listing__item-block.listing__info 
+                            img(src=`img/${item.img}`, alt="")
+                            span.listing__rate(style=`--rating: ${item.rate};`)= item.rate
+                        if item.advantages 
+                            ul.listing__item-block.listing__advantages 
+                                each el in item.advantages
+                                    li.listing__advantages-item= el 
+                        
+                        if item.bonus
+                            div.listing__item-block.listing__bonus 
+                                span Welcome bonus
+                                p.listing__bonus-text= item.bonus
+
+                        .listing__btns 
+                            each btn in item.btns
+                                +button(btn.modificator, btn.text, null,  btn.svg)
+                            if item.payments
+                                ul.listing__payments
+                                    each el in item.payments 
+                                        li.listing__payment-item
+                                            img(src=`img/${el.img}`, alt="")
+
+
+                            
+
+     

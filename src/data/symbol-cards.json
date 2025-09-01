@@ -1,0 +1,67 @@
+{
+    "symbolCards": [
+        {
+            "img": "symbol1.png",
+            "title": "Orange Gummy Bear",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        },
+        {
+            "img": "symbol2.png",
+            "title": "Purple Gummy Bear",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        },
+        {
+            "img": "symbol3.png",
+            "title": "Red Gummy Bear",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        },
+        {
+            "img": "symbol4.png",
+            "title": "Green Star Candy",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        },
+        {
+            "img": "symbol5.png",
+            "title": "Pink Jelly Bean",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        },
+        {
+            "img": "symbol6.png",
+            "title": "Orange Swirl Candy",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        },
+        {
+            "img": "symbol7.png",
+            "title": "Pink Round Candy",
+            "table": [
+                ["12+", "$16.00"],
+                ["10-11", "$2.40"],
+                ["8-9", "$1.60"]
+            ]
+        }
+    ]
+}

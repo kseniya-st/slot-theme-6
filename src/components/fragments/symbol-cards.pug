@@ -1,0 +1,11 @@
+ul.symbol-cards 
+    each item in symbolCards 
+        li.symbol-cards__item 
+            img.symbol-cards__item-icon(src=`img/${item.img}`, alt="")
+            p.symbol-cards__item-title= item.title 
+            table.symbol-cards__item-table 
+                tbody.symbol-cards__item-tbody 
+                    each table in item.table 
+                        tr.symbol-cards__item-row 
+                            each td in table 
+                                td= td 

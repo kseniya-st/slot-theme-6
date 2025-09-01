@@ -81,6 +81,12 @@ $font-size-default: 16;
     font-weight: 500;
 }
 
+@mixin font-lg-semibold-fix() {
+    font-size: rem(18);
+    line-height: 150%;
+    font-weight: 600;
+}
+
 @mixin font-m() {
     font-size: rem(16);
     line-height: 150%;
