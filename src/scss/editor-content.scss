@@ -109,11 +109,10 @@ ul.wp-block-list {
             position: absolute;
             top: 50%;
             left: 0;
-            width: 8px;
-            height: 8px;
-            border-radius: 2px;
-            background: var(--accent-base, #3b8ffe);
-            transform: rotate(45deg) translateY(-50%);
+            width: 11px;
+            height: 11px;
+            transform: translateY(-50%);
+            background: url('data:image/svg+xml,<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="5.323" width="8" height="8" rx="2" transform="rotate(-45 0 5.323)" fill="%233B8FFE"/></svg>');
         }
     }
 }

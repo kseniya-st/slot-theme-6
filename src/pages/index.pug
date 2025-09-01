@@ -60,6 +60,27 @@ html(lang="en")
                 p Sugar Rush online was designed and launched in 2019 by Pragmatic Play, a well-known software development company specializing in creating online casino games. It quickly became a popular game, with several sequels.
                 include /components/fragments/symbol-cards.pug
 
+            include /components/blocks/banner.pug
+
+            section.wrapper
+                h2  Sugar Rush Gameplay Experience
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                h3 List
+                ul 
+                    li Bet on outcomes of virtual football matches;
+                    li Predict the winner of a virtual tennis match;
+                    li Bet on outcomes of virtual football matches;
+                ol  
+                    li Predict the winner of a virtual tennis match;
+                    li Stake on virtual basketball game results;
+                    li Choose which virtual dog will cross the finish line first and which will cross the other.
+                +button("btn--primary", "Play now")
+            
+            section.wrapper 
+                h2 Pros and cons
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                +prosCons(prosCons)
 
             include ../components/blocks/section-faq.pug 
 

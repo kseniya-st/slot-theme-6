@@ -1,0 +1,33 @@
+@use "../settings" as *;
+
+.banner {
+    padding: 24px 442px 24px 24px;
+    @include flex(column, flex-start, center, 16px);
+    min-height: 263px;
+
+    background-color: #6a63ff;
+    background-position: center right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url("/img/banner-bg.webp");
+    overflow: hidden;
+    color: #fff;
+
+    & > * {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    @include media-max-mlg {
+        justify-content: flex-start;
+        background-image: url("/img/banner-bg-mob.webp");
+        padding: 24px 24px 81.389vw 24px;
+        background-position: center bottom;
+        background-size: 100% auto;
+    }
+}
