@@ -7,8 +7,9 @@ mixin listing(list, modificator)
                 tr.listing__row 
                     td.listing__item
                         p.listing__name
-                            span.listing__place= item.place
-                            | #{item.name}
+                            span.listing__place= item.place 
+                            |  
+                            | #{ item.name}
 
                         .listing__item-block.listing__info 
                             img(src=`img/${item.img}`, alt="")
@@ -29,7 +30,7 @@ mixin listing(list, modificator)
                             if item.payments
                                 ul.listing__payments
                                     each el in item.payments 
-                                        li.listing__payment-item
+                                        li.listing__payments-item
                                             img(src=`img/${el.img}`, alt="")
 
 

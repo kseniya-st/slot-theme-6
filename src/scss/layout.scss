@@ -51,7 +51,7 @@
         grid-template-columns: 1fr 290px;
 
         width: 100%;
-        max-width: calc(var(--width-container));
+        max-width: calc(var(--width-container) + var(--offsets, 20px) * 2);
 
         margin: var(--wrapper-margin) auto 0;
         padding: 20px;
