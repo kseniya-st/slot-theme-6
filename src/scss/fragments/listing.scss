@@ -51,6 +51,7 @@
         img {
             border-radius: 16px;
             width: 185px;
+
             height: auto;
             object-fit: cover;
             border-radius: 16px;
@@ -58,7 +59,7 @@
     }
 
     &__rating {
-        @include rateStars(20px);
+        @include rateStars(22px);
         flex-direction: row-reverse;
         font-weight: 500;
     }
@@ -127,7 +128,7 @@
 
             img,
             svg {
-                @include maxSize(50px, 29px);
+                @include maxSize(49px, 29px);
             }
         }
     }

@@ -12,7 +12,7 @@
     padding-inline: calc((100vw - var(--width-container)) / 2);
 
     @include mediaMax(1420px) {
-        margin: 0;
+        margin-inline: 0;
         padding-inline: var(--offsets, 20px);
     }
 
@@ -60,7 +60,7 @@
         &-list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
+            gap: 12px 64px;
 
             @include media-max-mlg {
                 grid-template-columns: repeat(2, 1fr);
@@ -139,5 +139,12 @@
 
     @include media-max-sm {
         padding-block: 32px;
+
+        &__logos {
+            img,
+            svg {
+                max-height: 25px;
+            }
+        }
     }
 }

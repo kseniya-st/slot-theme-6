@@ -48,15 +48,15 @@ function updateBaseLayout() {
     
     // Удаляем предыдущие автогенерированные include
     const newBaseContent = baseContent.replace(
-        /\/\/ AUTO-INJECT-START[\s\S]*?\/\/ AUTO-INJECT-END\n?/,
+        /\/\/\- AUTO-INJECT-START[\s\S]*?\/\/\- AUTO-INJECT-END\n?/,
         ""
     );
 
     // Добавляем новые include в начало
     const injectBlock = [
-        "// AUTO-INJECT-START",
+        "//- AUTO-INJECT-START",
         ...includes,
-        "// AUTO-INJECT-END",
+        "//- AUTO-INJECT-END",
         ""
     ].join("\n");
 

@@ -14,7 +14,7 @@
     &__rating {
         color: var(--text-main, #2b2b2b);
 
-        @include rateStars(20px);
+        @include rateStars(24px);
         flex-direction: row-reverse;
         font-size: rem(18);
         line-height: 150%;
@@ -26,6 +26,7 @@
         min-height: 534px;
         margin-top: 20px;
         border-radius: 16px;
+        margin-bottom: 4px;
         overflow: hidden;
         padding: 20px;
 

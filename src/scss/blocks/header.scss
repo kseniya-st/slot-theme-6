@@ -126,7 +126,7 @@
         @include mediaMax($burger-max) {
             @include flex(column, stretch, flex-start, 0);
             margin-top: 16px;
-            padding: 12px 24px;
+            padding: 0 24px;
 
             .item {
                 a,

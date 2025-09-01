@@ -17,6 +17,8 @@
     background: var(--button-bg, #ff638f);
     color: var(--button-color, #fff);
 
+    @include font-m;
+
     svg {
         @include minSize(18px, 18px);
         @include maxSize(24px, 48px);
@@ -59,6 +61,6 @@
     }
 
     &--s {
-        padding: 10px 16px;
+        padding: 8px 16px;
     }
 }

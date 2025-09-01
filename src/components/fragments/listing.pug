@@ -1,5 +1,7 @@
 //- @defaultData = listing
 //- @mixin
+include /components/fragments/button.pug
+include /mixins/icons.pug
 mixin listing(list, modificator)
     table.listing(class=`${modificator ? modificator : ''}`)
         tbody.listing__list 

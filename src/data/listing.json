@@ -3,7 +3,7 @@
         {
             "place": "1.",
             "name":"1win Casino",
-            "img":"1win.png",
+            "img":"1win-listing.png",
             "rate": 4.8,
             "advantages": [
                 "5,000+ games",
@@ -73,7 +73,7 @@
          {
             "place": "3.",
             "name":"1XBet Casino",
-            "img":"1xbet.png",
+            "img":"1xbet-lisiting.png",
             "rate": 4.8,
             "advantages": [
                 "5,000+ games",
@@ -108,7 +108,7 @@
          {
             "place": "4.",
             "name":"1win Casino",
-            "img":"1win.png",
+            "img":"1win-listing.png",
             "rate": 4.8,
             "advantages": [
                 "5,000+ games",

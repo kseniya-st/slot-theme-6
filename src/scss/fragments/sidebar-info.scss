@@ -26,6 +26,10 @@
                 color: var(--text-secondary, #6b6b6b);
                 text-align: right;
             }
+
+            &:first-child {
+                width: 50%;
+            }
         }
     }
 

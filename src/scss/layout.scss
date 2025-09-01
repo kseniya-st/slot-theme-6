@@ -22,7 +22,7 @@
     }
 
     & > .btn {
-        margin-top: 20px;
+        margin-top: 16px;
 
         &:first-child {
             margin-top: 0;
@@ -54,9 +54,9 @@
         max-width: calc(var(--width-container) + var(--offsets, 20px) * 2);
 
         margin: var(--wrapper-margin) auto 0;
-        padding: 20px;
+        padding-inline: var(--offsets, 20px);
         column-gap: 15px;
-        margin-top: calc(var(--wrapper-margin) * -1);
+        margin-top: 0;
 
         & > * {
             grid-column: 1 / 2;

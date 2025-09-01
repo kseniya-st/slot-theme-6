@@ -37,6 +37,7 @@
 
         &-index {
             text-align: center;
+            @include flex(row, center, center);
             border-radius: 16px;
             background: var(--accent-secondary, #eff8ff);
             width: 26px;

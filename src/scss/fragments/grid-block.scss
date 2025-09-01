@@ -4,9 +4,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
+    margin-top: 20px;
 
-    &:not(:first-child) {
-        margin-top: 20px;
+    &:first-child {
+        margin-top: 0;
     }
 
     &.grid-block--5 {
@@ -14,6 +15,7 @@
     }
 
     @include media-max-sm {
+        margin-top: 16px;
         grid-template-columns: 1fr;
     }
 }

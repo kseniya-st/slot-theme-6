@@ -27,6 +27,8 @@
         table-layout: auto;
         min-width: 500px;
 
+        white-space: nowrap;
+
         td {
             &:last-child {
                 text-align: unset;

@@ -2,6 +2,7 @@
 
 .lang {
     position: relative;
+    z-index: $z-index-lang;
     padding: 8px;
     background: transparent;
     @include flex(row, center, flex-start, 8px);
@@ -44,6 +45,7 @@
 
         min-width: 108px;
         max-width: 200px;
+        max-height: 300px;
 
         border-radius: 0 0 16px 16px;
         background: var(--card-bg, #fff);

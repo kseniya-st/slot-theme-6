@@ -1,5 +1,7 @@
 //- @defaultData = bonusCards[0]
 //- @mixin
+include /components/fragments/button.pug
+include /mixins/icons.pug
 mixin bonusCard(item)
     li.bonus-card
         img(src=`img/${item.img}` alt="")

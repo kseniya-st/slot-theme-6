@@ -12,6 +12,10 @@
 
     @include hideScrollbar;
 
+    @include media-max-sm {
+        margin-top: 16px;
+    }
+
     img,
     video {
         user-select: none;
