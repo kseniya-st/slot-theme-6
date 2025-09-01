@@ -15,10 +15,4 @@
     @include media-max-sm {
         margin-top: 16px;
     }
-
-    // &--6 {
-    //     & > * {
-    //         min-width: calc((var(--width-container, 1380px) - 16px * 5) / 6);
-    //     }
-    // }
 }

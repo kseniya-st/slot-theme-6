@@ -1,8 +1,5 @@
-//- @mixin
-mixin mobBtn(item)
-    aside.mob-btn
-        img(src=`img/${item.img}.png`, alt="") 
-        p.mob-btn__text= item.text
-            span= item.span 
-        include /components/fragments/button.pug
-        +button(item.btn.modificator, item.btn.text)
+aside.mob-btn
+    img(src=`img/mob-btn-img.png`, alt="") 
+    p.mob-btn__text Sugar Rush
+        span.mob-btn__rating(style="--rating: 4.8;") 4.8
+    +button("btn--tertiary", "Play now")

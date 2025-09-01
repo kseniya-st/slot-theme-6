@@ -26,9 +26,9 @@
 
     &__index {
         @include flex(row, center, center);
-        min-width: 24px;
-        height: 24px;
-        width: 24px;
+        min-width: 30px;
+        height: 30px;
+        width: 30px;
         border-radius: 16px;
         background: var(--accent-secondary, #eff8ff);
         color: var(--accent-base, #3b8ffe);

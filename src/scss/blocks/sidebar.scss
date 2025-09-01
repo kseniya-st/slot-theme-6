@@ -1,0 +1,28 @@
+@use "../settings" as *;
+
+.sidebar {
+    width: 100%;
+    @include flex(column, stretch, flex-start);
+    padding: 0;
+    background: transparent;
+
+    @include mediaRange($min-md, $max-mlg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        align-items: flex-start;
+
+        .sidebar-info,
+        .last-winners {
+            grid-row: 1 / 2;
+        }
+
+        .last-winners {
+            margin-top: 0;
+        }
+
+        .sidebar-bonus {
+            grid-column: 1 / -1;
+        }
+    }
+}

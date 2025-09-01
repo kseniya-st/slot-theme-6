@@ -1,0 +1,56 @@
+@use "../settings" as *;
+
+.last-winners {
+    margin-top: 16px;
+    &:first-child {
+        margin-top: 0;
+    }
+
+    padding: 16px;
+    border-radius: var(--card-radius, 20px);
+    background: var(--card-bg, #fff);
+
+    &__title {
+        color: var(--text-main, #2b2b2b);
+        @include font-xl-semibold-fix;
+    }
+
+    &__list {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+
+        @include flex(column, stretch, flex-start);
+    }
+
+    &__item {
+        @include flex(row, center, flex-start, 8px);
+        @include font-s;
+        color: var(--text-main, #2b2b2b);
+
+        &:not(:first-child) {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--line-color, #e4ebed);
+        }
+
+        &-index {
+            text-align: center;
+            border-radius: 16px;
+            background: var(--accent-secondary, #eff8ff);
+            width: 26px;
+            height: 26px;
+            color: var(--accent-base, #3b8ffe);
+            @include font-m-medium;
+        }
+
+        &-sum {
+            display: block;
+            color: var(--accent-base, #3b8ffe);
+            text-align: right;
+            @include font-m-semibold;
+            margin-left: auto;
+        }
+    }
+}

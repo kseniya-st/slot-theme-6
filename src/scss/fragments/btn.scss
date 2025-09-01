@@ -49,6 +49,15 @@
         }
     }
 
+    &--tertiary {
+        background: #fff;
+        color: var(--secondary-button-bg, #4ca8ff);
+
+        @include hoverActiveFocus {
+            background: #f0f0f0;
+        }
+    }
+
     &--s {
         padding: 10px 16px;
     }

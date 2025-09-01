@@ -12,7 +12,7 @@ mixin listing(list, modificator)
 
                         .listing__item-block.listing__info 
                             img(src=`img/${item.img}`, alt="")
-                            span.listing__rate(style=`--rating: ${item.rate};`)= item.rate
+                            span.listing__rating(style=`--rating: ${item.rate};`)= item.rate
                         if item.advantages 
                             ul.listing__item-block.listing__advantages 
                                 each el in item.advantages

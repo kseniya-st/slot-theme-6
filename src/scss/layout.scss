@@ -44,3 +44,36 @@
         padding: 16px;
     }
 }
+
+.sidebar-grid {
+    @include media-min-mlg {
+        display: grid;
+        grid-template-columns: 1fr 290px;
+
+        width: 100%;
+        max-width: calc(var(--width-container));
+
+        margin: var(--wrapper-margin) auto 0;
+        padding: 20px;
+        column-gap: 15px;
+        margin-top: calc(var(--wrapper-margin) * -1);
+
+        & > * {
+            grid-column: 1 / 2;
+            max-width: 100%;
+            min-width: 0;
+            margin-inline: 0;
+        }
+
+        .sidebar {
+            align-self: flex-start;
+            grid-column: 2 / 3;
+            grid-row: 1 / 100;
+            position: sticky;
+            top: 0;
+            right: 0;
+            width: 302px;
+            padding-inline: 0;
+        }
+    }
+}

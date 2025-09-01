@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width")
-    title main page
+    title all components
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css")
     link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
     link(rel="stylesheet",  href=cssPath)
@@ -35,6 +35,10 @@ html(lang="en")
                 h2 Table
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 +table(table, true)
+               
+            section.wrapper 
+                h2 Basic Information
+                +table(table1, false)
 
             section.wrapper 
                 h2 Top 10 Casinos
@@ -52,6 +56,11 @@ html(lang="en")
                 h2 Screenshots
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 +gallery(gallery)
+
+            section.wrapper 
+                h2 Screenshots
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                +gallery(gallery1)
 
             section.wrapper 
                 h2 How to
