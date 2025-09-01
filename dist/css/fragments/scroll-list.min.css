@@ -1,0 +1,1 @@
+.scroll-list{overflow-x:auto;overflow-y:hidden;display:flex;flex-direction:row;align-items:stretch;justify-content:flex-start;gap:16px;scrollbar-width:none;-ms-overflow-style:none;margin-top:20px}.scroll-list::-webkit-scrollbar{width:0;height:0;display:none}.scroll-list:first-child{margin-top:0}@media(max-width: 575.9px){.scroll-list{margin-top:16px}}

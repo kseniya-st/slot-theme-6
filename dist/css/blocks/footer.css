@@ -1,0 +1,206 @@
+.footer {
+  position: relative;
+  padding-block: 48px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px 48px;
+  border-radius: 0;
+  max-width: 100%;
+  padding-inline: calc((100vw - var(--width-container)) / 2);
+}
+@media (max-width: 1420px) {
+  .footer {
+    margin-inline: 0;
+    padding-inline: var(--offsets, 20px);
+  }
+}
+.footer > * {
+  grid-column: 1/-1;
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer__row img,
+.footer__row svg {
+  max-width: 200px;
+  max-height: 50px;
+  object-fit: contain;
+}
+.footer__logo {
+  display: flex;
+}
+.footer__logo:is(a) {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+@media (any-hover: hover) {
+  .footer__logo:is(a):hover {
+    opacity: 0.6;
+  }
+}
+.footer__logo:is(a):active {
+  opacity: 0.6;
+}
+@media (any-hover: hover) {
+  .footer__logo:is(a):focus {
+    opacity: 0.6;
+  }
+}
+.footer__logo img,
+.footer__logo svg {
+  max-width: 200px;
+  max-height: 50px;
+  object-fit: contain;
+}
+@media (max-width: 575.9px) {
+  .footer__logo img,
+  .footer__logo svg {
+    max-height: 40px;
+  }
+}
+.footer__nav {
+  width: 100%;
+  padding-block: 24px;
+  border-top: 1px solid var(--line-color, #e4ebed);
+  border-bottom: 1px solid var(--line-color, #e4ebed);
+}
+.footer__nav-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 64px;
+}
+@media (max-width: 991.9px) {
+  .footer__nav-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575.9px) {
+  .footer__nav-list {
+    grid-template-columns: 1fr;
+  }
+}
+.footer__nav-list a {
+  color: var(--text-main, #2b2b2b);
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.footer__nav-list a:active {
+  color: var(--link-color-hover, #3b8ffe);
+}
+@media (any-hover: hover) {
+  .footer__nav-list a:hover {
+    color: var(--link-color-hover, #3b8ffe);
+  }
+  .footer__nav-list a:focus {
+    color: var(--link-color-hover, #3b8ffe);
+  }
+}
+.footer a.footer__logo {
+  justify-self: flex-start;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+@media (any-hover: hover) {
+  .footer a.footer__logo:hover {
+    opacity: 0.6;
+  }
+}
+.footer a.footer__logo:active {
+  opacity: 0.6;
+}
+@media (any-hover: hover) {
+  .footer a.footer__logo:focus {
+    opacity: 0.6;
+  }
+}
+.footer__logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid var(--line-color, #e4ebed);
+}
+.footer__logos li {
+  max-width: 100%;
+}
+.footer__logos img,
+.footer__logos svg {
+  max-width: 100%;
+  max-height: 48px;
+}
+.footer__soc {
+  color: var(--text-main, #2b2b2b);
+}
+.footer__soc-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer__soc-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+@media (any-hover: hover) {
+  .footer__soc-link:hover {
+    opacity: 0.6;
+  }
+}
+.footer__soc-link:active {
+  opacity: 0.6;
+}
+@media (any-hover: hover) {
+  .footer__soc-link:focus {
+    opacity: 0.6;
+  }
+}
+.footer__soc-link img,
+.footer__soc-link svg {
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: contain;
+}
+.footer__copyright {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .footer__soc {
+    grid-column: 1/2;
+  }
+  .footer__info {
+    grid-column: 2/3;
+  }
+}
+@media (max-width: 575.9px) {
+  .footer {
+    padding-block: 32px;
+  }
+  .footer__logos img,
+  .footer__logos svg {
+    max-height: 25px;
+  }
+}

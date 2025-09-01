@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.mob-btn {
+  position: sticky;
+  left: 0;
+  bottom: 0px;
+  z-index: 30;
+  padding: 12px;
+  background: var(--secondary-button-bg, #4ca8ff);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.mob-btn > img, .mob-btn > svg {
+  max-width: 64px;
+}
+.mob-btn .btn {
+  margin-left: -4px;
+  padding: 8px 16px;
+}
+.mob-btn__text {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  color: var(--button-color, #fff);
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+.mob-btn__text span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  color: var(--text-main, #2b2b2b);
+  --percent: calc(var(--rating, 4.5) / 5 * 100%);
+  flex-direction: row-reverse;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+.mob-btn__text span::before, .mob-btn__text span::after {
+  font-size: 20px;
+  line-height: 18px;
+  height: 20px;
+  letter-spacing: 0px;
+}
+.mob-btn__text span::before {
+  content: "★★★★★";
+  display: block;
+  background: linear-gradient(90deg, var(--star-color) var(--percent), var(--star-bg) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mob-btn__text span::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "☆☆☆☆☆";
+  display: block;
+  letter-spacing: 0px;
+  color: var(--star-color);
+}
+@media (min-width: 576px) {
+  .mob-btn {
+    display: none;
+  }
+}

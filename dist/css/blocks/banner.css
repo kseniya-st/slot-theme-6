@@ -1,0 +1,32 @@
+.banner {
+  padding: 24px 442px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 263px;
+  background-color: #6a63ff;
+  background-position: center right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-image: url("/img/banner-bg.webp");
+  overflow: hidden;
+  color: #fff;
+}
+.banner > * {
+  position: relative;
+  z-index: 1;
+}
+.banner h2 {
+  color: #fff;
+  margin: 0;
+}
+@media (max-width: 991.9px) {
+  .banner {
+    justify-content: flex-start;
+    background-image: url("/img/banner-bg-mob.webp");
+    padding: 16px 16px 81.389vw 16px;
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+}

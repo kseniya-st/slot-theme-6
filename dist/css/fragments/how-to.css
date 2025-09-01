@@ -1,0 +1,81 @@
+.how-to {
+  margin-top: 20px;
+  counter-reset: how-to;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.how-to:first-child {
+  margin-top: 0;
+}
+.how-to__item {
+  position: relative;
+  counter-increment: how-to;
+  padding: 16px 16px 16px 24px;
+  border-radius: 16px;
+  background: var(--card-secondary-bg, #f9f9f9);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+.how-to__item::before {
+  content: "Step " counter(how-to);
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  padding: 2px 8px;
+  border-radius: 36px;
+  background: var(--accent-base, #3b8ffe);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+.how-to__item-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+.how-to__item-title {
+  margin: 0;
+  color: var(--text-main, #2b2b2b);
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+.how-to__item-descr {
+  color: var(--text-secondary, #6b6b6b);
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+.how-to__item img {
+  width: 100%;
+  border-radius: 8px;
+}
+.how-to__item .btn {
+  margin-top: 8px;
+}
+@media (max-width: 991.9px) {
+  .how-to__item {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+  }
+}
+@media (max-width: 767.9px) {
+  .how-to__item .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 575.9px) {
+  .how-to {
+    margin-top: 16px;
+  }
+}

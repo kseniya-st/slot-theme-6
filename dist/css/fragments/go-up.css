@@ -1,0 +1,39 @@
+.go-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 400;
+  border-radius: 50%;
+  background: var(--button-bg, #ff638f);
+  cursor: pointer;
+  overflow: hidden;
+  transition-property: background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.go-up:not(.active) {
+  display: none;
+}
+.go-up svg {
+  max-width: 40px;
+  max-height: 40px;
+}
+@media (max-width: 575.9px) {
+  .go-up {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+  }
+}
+@media (any-hover: hover) {
+  .go-up:hover {
+    background: var(--button-hover-bg, #fd337d);
+  }
+}

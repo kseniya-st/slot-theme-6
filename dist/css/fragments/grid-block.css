@@ -1,0 +1,18 @@
+.grid-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.grid-block:first-child {
+  margin-top: 0;
+}
+.grid-block.grid-block--5 {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+@media (max-width: 575.9px) {
+  .grid-block {
+    margin-top: 16px;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,27 @@
+.sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0;
+  background: transparent;
+}
+@media (max-width: 991.9px) and (min-width: 768px) {
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    align-items: flex-start;
+  }
+  .sidebar .sidebar-info,
+  .sidebar .last-winners {
+    grid-row: 1/2;
+  }
+  .sidebar .last-winners {
+    margin-top: 0;
+  }
+  .sidebar .sidebar-bonus {
+    grid-column: 1/-1;
+  }
+}

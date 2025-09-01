@@ -1,0 +1,65 @@
+.last-winners {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--card-radius, 20px);
+  background: var(--card-bg, #fff);
+}
+.last-winners:first-child {
+  margin-top: 0;
+}
+.last-winners__title {
+  color: var(--text-main, #2b2b2b);
+  font-size: 1.25rem;
+  line-height: 140%;
+  font-weight: 600;
+}
+.last-winners__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.last-winners__list:first-child {
+  margin-top: 0;
+}
+.last-winners__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--text-main, #2b2b2b);
+}
+.last-winners__item:not(:first-child) {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-color, #e4ebed);
+}
+.last-winners__item-index {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--accent-secondary, #eff8ff);
+  width: 26px;
+  height: 26px;
+  color: var(--accent-base, #3b8ffe);
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+.last-winners__item-sum {
+  display: block;
+  color: var(--accent-base, #3b8ffe);
+  text-align: right;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 600;
+  margin-left: auto;
+}

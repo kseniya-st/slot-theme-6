@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  color: var(--text-main, #2b2b2b);
+}
+.section-hero h1 {
+  margin: 0;
+}
+.section-hero__rating {
+  color: var(--text-main, #2b2b2b);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  color: var(--text-main, #2b2b2b);
+  --percent: calc(var(--rating, 4.5) / 5 * 100%);
+  flex-direction: row-reverse;
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: 500;
+}
+.section-hero__rating::before, .section-hero__rating::after {
+  font-size: 24px;
+  line-height: 22px;
+  height: 24px;
+  letter-spacing: 0px;
+}
+.section-hero__rating::before {
+  content: "★★★★★";
+  display: block;
+  background: linear-gradient(90deg, var(--star-color) var(--percent), var(--star-bg) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-hero__rating::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "☆☆☆☆☆";
+  display: block;
+  letter-spacing: 0px;
+  color: var(--star-color);
+}
+.section-hero__demo {
+  position: relative;
+  min-height: 534px;
+  margin-top: 20px;
+  border-radius: 16px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.section-hero__demo::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+.section-hero__btns {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 8px;
+}
+.section-hero__btns .btn {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .section-hero > * {
+    grid-column: 1/-1;
+  }
+  .section-hero h1 {
+    grid-column: 1/2;
+  }
+  .section-hero__rating {
+    grid-column: 2/3;
+  }
+}
+@media (max-width: 575.9px) {
+  .section-hero {
+    grid-template-columns: 1fr;
+  }
+  .section-hero__demo {
+    min-height: 199px;
+    margin-top: 16px;
+  }
+  .section-hero__rating {
+    margin-right: auto;
+    margin-top: 8px;
+  }
+}

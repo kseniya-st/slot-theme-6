@@ -1,0 +1,70 @@
+.pros-cons {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-top: 20px;
+}
+.pros-cons:first-child {
+  margin-top: 0;
+}
+.pros-cons__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.pros-cons__item--pros .pros-cons__title {
+  border-color: var(--pros, #08d4ab);
+}
+.pros-cons__item--pros .pros-cons__list li::before {
+  content: url('data:image/svg+xml,<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y=".667" width="16" height="16" rx="8" fill="%2308D4AB"/><path d="M11.473 5.917a.5.5 0 0 0-.353.16l-4.403 4.57-1.835-1.905a.5.5 0 0 0-.365-.162.5.5 0 0 0-.37.156.53.53 0 0 0-.147.373.53.53 0 0 0 .154.368l2.2 2.284a.505.505 0 0 0 .727 0l4.767-4.949a.53.53 0 0 0 .112-.574.5.5 0 0 0-.193-.237.5.5 0 0 0-.294-.084" fill="%23fff"/></svg>');
+}
+.pros-cons__item--cons .pros-cons__title {
+  border-color: var(--cons, #ff3676);
+}
+.pros-cons__item--cons .pros-cons__list li::before {
+  content: url('data:image/svg+xml,<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y=".667" width="16" height="16" rx="8" fill="%23FF3676"/><path d="m10.5 6.167-5 5m0-5 5 5" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.pros-cons__title {
+  color: var(--text-main, #2b2b2b);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: 500;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--pros, #08d4ab);
+}
+.pros-cons__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.pros-cons__list li {
+  position: relative;
+  padding-left: 24px;
+}
+.pros-cons__list li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+@media (max-width: 991.9px) {
+  .pros-cons {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575.9px) {
+  .pros-cons {
+    margin-top: 16px;
+  }
+}
