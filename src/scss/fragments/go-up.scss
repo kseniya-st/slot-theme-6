@@ -4,7 +4,7 @@
     @include flex(row, center, center);
     @include size(44px, 44px);
 
-    @include fixed($bottom: 80px, $right: 32px);
+    @include fixed($bottom: 24px, $right: 24px);
     z-index: $z-index-go-up;
 
     border-radius: 50%;
@@ -19,15 +19,15 @@
         display: none;
     }
 
+    svg {
+        @include maxSize(40px, 40px);
+    }
+
     @include media-max-sm {
-        @include fixed($bottom: 100px, $right: 16px);
+        @include fixed($bottom: 100px, $right: 24px);
     }
 
     @include hover {
         background: var(--button-hover-bg, #fd337d);
-    }
-
-    svg {
-        @include maxSize(40px, 40px);
     }
 }

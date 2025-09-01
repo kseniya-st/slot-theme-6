@@ -1,12 +1,11 @@
-include /layouts/base.pug
-block content
-    section.wrapper.section-hero
-        h1 Sugar Rush Slot Online
-        span.section-hero__rating(style="--rating: 4.8;") 4.8
-        .section-hero__demo(style="background-image: url('img/sugar-rush.png')") 
-            .section-hero__btns 
-                +button("btn--primary", "Play for real money")
-                +button("btn--secondary js-open__modal", "Play Demo")
-        p Online slots are digital versions of classic slot machines found in brick-and-mortar casinos. They operate through digital platforms accessible from internet-connected devices. Like their physical counterparts, online slots are very popular thanks to their variety of themes and bonuses.
-        p Online slots are digital versions of classic slot machines found in brick-and-mortar casinos. They operate through digital platforms accessible from internet-connected devices.
-        include /components/fragments/author-row.pug 
+section.wrapper.section-hero
+    h1 Sugar Rush Slot Online
+    span.section-hero__rating(style="--rating: 4.8;") 4.8
+    .section-hero__demo(style="background-image: url('img/sugar-rush.png')") 
+        .section-hero__btns 
+            +button("btn--primary js-modal__btn", "Play for real money")
+            button.btn.btn--secondary.js-modal__open(data-modal-title="Sugar Rush Demo" data-modal-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrush&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD") 
+                | Play Demo 
+    p Online slots are digital versions of classic slot machines found in brick-and-mortar casinos. They operate through digital platforms accessible from internet-connected devices. Like their physical counterparts, online slots are very popular thanks to their variety of themes and bonuses.
+    p Online slots are digital versions of classic slot machines found in brick-and-mortar casinos. They operate through digital platforms accessible from internet-connected devices.
+    include /components/fragments/author-row.pug 

@@ -1,13 +1,11 @@
-include /layouts/base.pug
-block content
-    section.wrapper.section-faq
-        .section.faq__col
-            h2 FAQ
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            .section-faq__list
-                each item in faq 
-                    details.section-faq__item 
-                        summary 
-                            span.section-faq__index= item.index
-                            | #{item.quest}
-                        p= item.answer
+section.wrapper.section-faq
+    .section.faq__col
+        h2 FAQ
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        .section-faq__list
+            each item in faq 
+                details.section-faq__item 
+                    summary 
+                        span.section-faq__index= item.index
+                        | #{item.quest}
+                    p= item.answer

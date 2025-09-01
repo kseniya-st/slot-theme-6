@@ -8,7 +8,6 @@ const MENU_ITEM_SELECTOR = ".js-menu__item";
 const MENU_LIST_SELECTOR = ".js-menu__list";
 const SUBMENU_SELECTOR = ".submenu";
 
-const LEFT_ALIGN_CLASS = "item_left";
 const NO_SCROLL_CLASS = "no-scroll";
 const MENU_ACTIVE_CLASS = "menu-active";
 const MENU_ITEM_ACTIVE_CLASS = "active";
@@ -27,7 +26,6 @@ export class Header {
         this.menuEl = document.querySelector(MENU_SELECTOR);
         this.menuItems = this.menuEl?.querySelectorAll(MENU_ITEM_SELECTOR);
 
-        // for MULTI-LEVEl menu
         this.firstLevelMenuItems = this.menuEl?.querySelectorAll(
             `:scope > ${MENU_LIST_SELECTOR} > ${MENU_ITEM_SELECTOR}`
         );
@@ -36,7 +34,6 @@ export class Header {
     init() {
         this.initBurger();
         this.initMenu();
-        this.updateOrientation();
         this.setHeaderHeight();
 
 
@@ -52,7 +49,6 @@ export class Header {
         if (this.currentWidth !== window.innerWidth) {
             this.currentWidth = window.innerWidth;
             this.closeMenu();
-            this.updateOrientation(); // if multi-level menu
             this.setHeaderHeight();
         }
     }
@@ -104,36 +100,6 @@ export class Header {
     setHeaderHeight() {
         const headerHeight = this.header.getBoundingClientRect().height;
         this.header.style.setProperty("--header-height", `${headerHeight}px`);
-    }
-
-    /**
-     * !! for MULTI-LEVEL menu !!
-     * Change menu orientation (left/right) on desktop
-     * If inner menu level goes beyond the window
-     */
-    updateOrientation() {
-        this.firstLevelMenuItems?.forEach((item) => {
-            item.classList.remove(LEFT_ALIGN_CLASS);
-            let submenu = item.querySelectorAll(`:scope > ${SUBMENU_SELECTOR}`);
-
-            let width = Array.from(submenu).reduce((acc, el) => {
-                el.style.display = "block";
-                let elWidth = el.getBoundingClientRect().width;
-                let innerSubmenu = el.querySelectorAll(SUBMENU_SELECTOR);
-                let maxWidth = 0;
-                innerSubmenu.forEach((innerEl) => {
-                    innerEl.style.display = "block";
-                    maxWidth = Math.max(maxWidth, innerEl.getBoundingClientRect().width);
-                    innerEl.removeAttribute("style");
-                });
-                el.removeAttribute("style");
-                return acc + elWidth + maxWidth;
-            }, 0);
-
-            if (window.innerWidth - item.getBoundingClientRect().left - 80 < width) {
-                item.classList.add(LEFT_ALIGN_CLASS);
-            }
-        });
     }
 }
 
