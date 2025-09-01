@@ -48,7 +48,8 @@
     &__info {
         @include flex(column, center, flex-start, 8px);
 
-        img {
+        img,
+        svg {
             border-radius: 16px;
             width: 185px;
 
@@ -160,7 +161,8 @@
         margin-top: 16px;
 
         &__info {
-            img {
+            img,
+            svg {
                 width: 100%;
             }
         }
