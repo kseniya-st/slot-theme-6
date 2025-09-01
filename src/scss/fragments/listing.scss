@@ -132,6 +132,12 @@
         }
     }
 
+    @include media-min-mlg {
+        &__btns {
+            grid-column: 4 / 5;
+        }
+    }
+
     @include media-max-mlg {
         &__item {
             grid-template-columns: 1fr 1fr;

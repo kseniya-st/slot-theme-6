@@ -15,6 +15,7 @@
     img {
         @include size(20px, 20px);
         min-width: 20px;
+        object-fit: cover;
     }
 
     img {

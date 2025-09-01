@@ -22,6 +22,33 @@
 
     &__row {
         @include flex(row, center, space-between, 16px);
+
+        img,
+        svg {
+            @include maxSize(200px, 50px);
+            object-fit: contain;
+        }
+    }
+
+    &__logo {
+        display: flex;
+
+        &:is(a) {
+            @include hoverOpacity;
+        }
+
+        img,
+        svg {
+            @include maxSize(200px, 50px);
+            object-fit: contain;
+        }
+
+        @include media-max-sm {
+            img,
+            svg {
+                max-height: 40px;
+            }
+        }
     }
 
     &__nav {
@@ -87,8 +114,13 @@
         }
 
         &-link {
-            display: block;
+            @include flex(row, center, center);
             @include hoverOpacity;
+            img,
+            svg {
+                @include maxSize(20px, 20px);
+                object-fit: contain;
+            }
         }
     }
 

@@ -95,7 +95,8 @@
 
     .header-menu {
         flex-wrap: wrap;
-        @include flex(row, center, flex-start, 24px);
+        @include flex(row, center, flex-start);
+        gap: 12px 24px;
 
         .item {
             @include relative;
