@@ -139,7 +139,7 @@ h6 {
     max-width: calc(var(--width-container) + var(--offsets, 20px) * 2);
     margin: var(--wrapper-margin) auto 0;
     padding-inline: var(--offsets, 20px);
-    column-gap: 15px;
+    column-gap: 16px;
     margin-top: 0;
   }
   .sidebar-grid > * {
@@ -603,7 +603,6 @@ svg {
 
 .header {
   --header-height: 72px;
-  border-bottom: 1px solid var(--line-color, #e4ebed);
   background: var(--card-bg, #fff);
   position: relative;
   z-index: 100;
@@ -821,6 +820,9 @@ svg {
   .header:not(.menu-active) .header__nav {
     display: none;
   }
+}
+.header.menu-active {
+  border-bottom: 1px solid var(--line-color, #e4ebed);
 }
 .header.menu-active .header__burger:before {
   opacity: 0;
@@ -1054,23 +1056,24 @@ svg {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  transition-property: opacity;
+}
+.footer__soc-link:active svg path {
+  fill: var(--accent-base, #3b8ffe);
+}
+@media (any-hover: hover) {
+  .footer__soc-link:hover svg path {
+    fill: var(--accent-base, #3b8ffe);
+  }
+  .footer__soc-link:focus svg path {
+    fill: var(--accent-base, #3b8ffe);
+  }
+}
+.footer__soc-link svg path {
+  fill: var(--text-main, #2b2b2b);
+  transition-property: fill;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-}
-@media (any-hover: hover) {
-  .footer__soc-link:hover {
-    opacity: 0.6;
-  }
-}
-.footer__soc-link:active {
-  opacity: 0.6;
-}
-@media (any-hover: hover) {
-  .footer__soc-link:focus {
-    opacity: 0.6;
-  }
 }
 .footer__soc-link img,
 .footer__soc-link svg {
@@ -1219,7 +1222,7 @@ svg {
   background-position: center right;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-image: url("/img/banner-bg.webp");
+  background-image: url("../img/banner-bg.webp");
   overflow: hidden;
   color: #fff;
 }
@@ -1234,7 +1237,7 @@ svg {
 @media (max-width: 991.9px) {
   .banner {
     justify-content: flex-start;
-    background-image: url("/img/banner-bg-mob.webp");
+    background-image: url("../img/banner-bg-mob.webp");
     padding: 16px 16px 81.389vw 16px;
     background-position: center bottom;
     background-size: 100% auto;
@@ -1977,6 +1980,7 @@ table.wp-block-table td:first-child {
   border-radius: 0 0 16px 16px;
   background: var(--card-bg, #fff);
   overflow: hidden;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02), 0 8px 10px 0 rgba(0, 0, 0, 0.04);
   overflow-y: auto;
 }
 @supports not selector(::-webkit-scrollbar) {

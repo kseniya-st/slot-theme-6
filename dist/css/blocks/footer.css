@@ -158,23 +158,24 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  transition-property: opacity;
+}
+.footer__soc-link:active svg path {
+  fill: var(--accent-base, #3b8ffe);
+}
+@media (any-hover: hover) {
+  .footer__soc-link:hover svg path {
+    fill: var(--accent-base, #3b8ffe);
+  }
+  .footer__soc-link:focus svg path {
+    fill: var(--accent-base, #3b8ffe);
+  }
+}
+.footer__soc-link svg path {
+  fill: var(--text-main, #2b2b2b);
+  transition-property: fill;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-}
-@media (any-hover: hover) {
-  .footer__soc-link:hover {
-    opacity: 0.6;
-  }
-}
-.footer__soc-link:active {
-  opacity: 0.6;
-}
-@media (any-hover: hover) {
-  .footer__soc-link:focus {
-    opacity: 0.6;
-  }
 }
 .footer__soc-link img,
 .footer__soc-link svg {

@@ -4,7 +4,6 @@
     $burger-max: $max-lg;
     $burger-min: $min-lg;
 
-    border-bottom: 1px solid var(--line-color, #e4ebed);
     background: var(--card-bg, #fff);
 
     @include relative;
@@ -153,6 +152,8 @@
     }
 
     &.menu-active {
+        border-bottom: 1px solid var(--line-color, #e4ebed);
+
         .header__burger {
             &:before {
                 opacity: 0;

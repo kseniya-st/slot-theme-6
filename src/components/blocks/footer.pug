@@ -1,9 +1,10 @@
+include /layouts/base.pug
 footer.footer.wrapper
     .footer__row 
         a.footer__logo(href="/")
-            img(src="img/logo.png", alt="") 
-        img(src="img/18+.png", alt="") 
-    
+            img(src="img/logo.png" alt="") 
+        img(src="img/18+.png" alt="") 
+
     nav.footer__nav 
         ul.footer__nav-list 
             each item in footerMenu 
@@ -15,16 +16,17 @@ footer.footer.wrapper
         ul.footer__soc-list 
             li.footer__soc-item 
                 a.footer__soc-link(href="/")
-                    img(src="img/x.png", alt="")
+                    +icon("x")
             li.footer__soc-item
                 a.footer__soc-link(href="/") 
-                    img(src="img/tg.png", alt="")
+                    +icon("tg")
             li.footer__soc-item
                 a.footer__soc-link(href="/") 
-                    img(src="img/inst.png", alt="")
+                    +icon("inst")
             li.footer__soc-item
                 a.footer__soc-link(href="/") 
-                    img(src="img/fb.png", alt="")
+                    +icon("fb")
+
     .footer__info
         p The information on site is for general information about slot Sweet Bonanza. This site are not responsible for information accuracy provided and any financial loss resulting from the use of information in this site, despite our effort to keep the information on the website up to date.
         p Visitors must find out about the legislation and taxation in their country of residence regarding casino games.

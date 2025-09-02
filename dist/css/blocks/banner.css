@@ -9,7 +9,7 @@
   background-position: center right;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-image: url("/img/banner-bg.webp");
+  background-image: url("../img/banner-bg.webp");
   overflow: hidden;
   color: #fff;
 }
@@ -24,7 +24,7 @@
 @media (max-width: 991.9px) {
   .banner {
     justify-content: flex-start;
-    background-image: url("/img/banner-bg-mob.webp");
+    background-image: url("../img/banner-bg-mob.webp");
     padding: 16px 16px 81.389vw 16px;
     background-position: center bottom;
     background-size: 100% auto;

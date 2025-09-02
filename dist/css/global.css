@@ -138,7 +138,7 @@ h6 {
     max-width: calc(var(--width-container) + var(--offsets, 20px) * 2);
     margin: var(--wrapper-margin) auto 0;
     padding-inline: var(--offsets, 20px);
-    column-gap: 15px;
+    column-gap: 16px;
     margin-top: 0;
   }
   .sidebar-grid > * {

@@ -1,6 +1,5 @@
 .header {
   --header-height: 72px;
-  border-bottom: 1px solid var(--line-color, #e4ebed);
   background: var(--card-bg, #fff);
   position: relative;
   z-index: 100;
@@ -218,6 +217,9 @@
   .header:not(.menu-active) .header__nav {
     display: none;
   }
+}
+.header.menu-active {
+  border-bottom: 1px solid var(--line-color, #e4ebed);
 }
 .header.menu-active .header__burger:before {
   opacity: 0;

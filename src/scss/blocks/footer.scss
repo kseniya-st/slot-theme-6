@@ -115,7 +115,21 @@
 
         &-link {
             @include flex(row, center, center);
-            @include hoverOpacity;
+
+            @include hoverActiveFocus {
+                svg {
+                    path {
+                        fill: var(--accent-base, #3b8ffe);
+                    }
+                }
+            }
+
+            svg {
+                path {
+                    fill: var(--text-main, #2b2b2b);
+                    @include transition(fill);
+                }
+            }
             img,
             svg {
                 @include maxSize(20px, 20px);
