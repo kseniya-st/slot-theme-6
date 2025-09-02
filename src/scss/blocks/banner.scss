@@ -1,21 +1,25 @@
 @use "../settings" as *;
 
 .banner {
-    padding: 24px 442px 24px 24px;
-    @include flex(column, flex-start, center);
-    min-height: 263px;
-
-    background-color: #6a63ff;
-    background-position: center right;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-image: url("../img/banner-bg.webp");
+    padding: 24px;
+    border-radius: var(--card-radius, 20px);
+    background: linear-gradient(90deg, #6b64ff 0%, #b36cff 100%);
     overflow: hidden;
     color: #fff;
 
-    & > * {
-        position: relative;
-        z-index: 1;
+    @include flex(row, center, flex-start, 48px);
+
+    &__content {
+        @include flex(column, flex-start, center, 16px);
+
+        h2,
+        p {
+            margin: 0;
+        }
+    }
+
+    img {
+        margin: 0;
     }
 
     h2 {
@@ -24,10 +28,23 @@
     }
 
     @include media-max-mlg {
-        justify-content: flex-start;
-        background-image: url("../img/banner-bg-mob.webp");
-        padding: 16px 16px 81.389vw 16px;
-        background-position: center bottom;
-        background-size: 100% auto;
+        background: linear-gradient(180deg, #6b64ff 0%, #b36cff 100%);
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
+
+    @include media-max-md {
+        gap: 24px;
+        &__content {
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    @include media-max-sm {
+        padding: 16px;
     }
 }
