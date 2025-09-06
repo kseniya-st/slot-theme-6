@@ -1324,6 +1324,9 @@ svg {
   grid-template-columns: 1fr auto auto;
   gap: 12px 10px;
 }
+.modal__content .btn {
+  min-width: 200px;
+}
 @media (max-width: 575.9px) {
   .modal__content {
     height: 100%;
@@ -1337,6 +1340,7 @@ svg {
     grid-template-rows: auto 1fr auto;
   }
   .modal__content .btn {
+    min-width: unset;
     width: 100%;
     grid-column: 1/-1;
     grid-row: 3/4;
